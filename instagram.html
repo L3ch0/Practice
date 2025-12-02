@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <style>
+    body {
+      background-color: #f8f3ed;
+      color: #5a3e2b;
+      font-family: "Georgia", "Playfair Display", serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header p.small {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 14px;
+      font-style: italic;
+      color: #7c5a43;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
+    }
+
+    .post {
+      position: relative;
+      background-color: #fffaf6;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      height: 580px;
+    }
+
+    /* Опис при наведенні */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(248, 243, 237, 0.95);
+      color: #5a3e2b;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .post:hover .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="small">solo con un piccolo segreto...</p>
+    <h1>Emozioni, creatività e momenti non hanno fine, se sai coglierli.</h1>
+  </header>
+
+  <section class="grid">
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/DAoQLuZoIG_/embed" title="Instagram post 2"></iframe>
+     <div class="card-content"> <h3>Che la fortuna e la luce siano dalla tua parte</h3>
+        <p>🪽 Custodisci te stesso dentro di te. </p>
+        <p> Dentro di te c’è una vera bussola, eppure chiedi la strada agli altri…  
+        Ti ricordo: tutto ciò che di buono esiste al mondo, una volta era un sogno.  
+        Quindi tieniti stretto ai tuoi sogni. 🌎🩶</p>
+      </div>
+    </div>
+
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/DQchINECCCn/embed" title="Instagram post 8"></iframe>
+      <div class="card-content"> <h3> Negroni makes you savor life! </h3> 
+         <p> La giovinezza non è sempre una questione di età. Come assaporare la vita? prosecco a colazione? negroni per pranzo? </p> 
+         <p> vivi come se non ci fosse alcun significato, ti fa semplicemente vivere o pensare a come vivere e sapere cosa è veramente sexy? L'intelligenza è sexy. Conoscerla e volerla conoscere sessualmente. Avere passione per la vita. Passione per gli affari. Passione per l'artigianato. Persone che vivono. Persone che ballano per strada sotto l'ansia dell'aria. Persone che suonano strumenti popolari in vicoli stretti. Persone che lasciano tracce nella storia. I momenti di pericolo sono diventati all'ordine del giorno, in cui la vita è più grande di dove è calma stabile. Finché batte il cuore, canticchiamo danze popolari fino a terra. e masthev per far gorgogliare un viburno fuori dalla finestra verso l'intera piazza del mercato!  </p> 
+         <p> e la gente ama! Ascolta, perché se si estraggono diamanti, allora c'è richiesta di anelli con pietre! o brevemente come vivere una piccola vita con grande sete nell'incantevole città di Leo. </p>  </div>
+    </div>
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/DHwtIoGItiF/embed" title="Instagram post 1"></iframe>
+           <div class="card-content">   <h3>Non c’è tempo per la tristezza</h3>
+<p>Non saprai mai cosa ti aspetta davanti.  
+        Ma, come nei corsi motivazionali economici, ti dirò: alzati e vai.  
+        Da qualsiasi punto tu parta, cerca, muoviti — e forse non troverai nulla.  
+        Ma finché dentro di te arde un fuoco, continua ad andare.  
+        <br><br>
+        Non gioco più nei drammi dove tutti sono infelici.  
+        Esco sulla pista da ballo della vita — ho qualcosa da far girare.  
+        <br><br>
+        La giovinezza non è tempo per la malinconia.  
+        I problemi, le guerre, le malattie — ci sono sempre stati e sempre saranno.  
+        Non c’è tempo per la tristezza,  
+        ma c’è tempo per correre per il mondo, ridere fino al dolore allo stomaco,  
+        ballare scalzi nei bar appiccicosi.  
+        Perché poi… potrebbe non esserci un “poi”.</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/C2UdLBoInkj/embed" title="Instagram post 3"></iframe>
+      <div class="card-content"> <h3> Mamma!!! Mi trovo nell'angolo più estremo del nostro pianeta, poi c’è solo la Groenlandia!! Riesci a immaginarlo? </h3>
+    <p> Faroe Islands 🇫🇴 </p> 
+    <p> THE MORE YOU LOOK, THE MORE YOU SEE </p> 
+    <p> never get tired of photographing the Fare Islands. Although geographically small, these islands are rich in culture, nature and people. Add altitude, and everything is new again. I hope to give new perspectives of my beloved islands and show you angles you have never seen before. And with that, I’ll let my pictures speak for themselves. </p> 
+    <p> 2 mesi ai margini della terra. Wow. Wow natura, wow bellezza e paesaggio, che ho visto apparire solo sugli screensaver di Windows. Wow, un'altra cultura e tradizione, non di qualcun altro, solo di un altro. Un altro nei momenti più piccoli e quindi interessanti. Wow, venti oceanici infiniti. Mettere i capelli qui è semplicemente inutile, ed è meglio non uscire di casa senza cappello. Le mie foto e le mie emozioni sincere parlano da sole e trasmettono l'intero spettro di waaauuu. 
+        L'oceano ti accoglierà in qualsiasi forma e condizione e sicuramente ti curerà da tutti i problemi mentali, mentre il vento delle Isole Faroe dissiperà tutte le tue ansie. Qui pace interiore. Qui la vita si ferma e si muove a una velocità così scarsa che il momento umano acquisisce un nuovo significato dell'esistenza. Se vi stancate della folle realtà, dello smog e degli infiniti stress frettolosi, venite, pecore e dolcetti all'aria delle Isole Faroe. 
+        Come dicono gli abitanti del posto, il tempo qui è forse tre volte al giorno, piove, c'è il sole, c'è la neve e c'è un vento fortissimo, e tutto questo in un'ora), come dicono gli arrivi, non è tutto così, è tutto diverso. Danze, lingua, abbigliamento, educazione e mentalità faroese. Tutto è così interessante perché è davvero diverso. Prospetto della vita scandinava, for amazing experience, for an interesting wedding , for branches with ladies, sequence evenings, “isch” to everything, the weather called “maybe” , sub ocean tunnels, circle salmon farms, soup with peaches and chicken , cold festivals, boiled sheep’s blood, no latte macchiato, and super weird language, for new acquaintances and new knowledge, grateful to everyone and for everyone 🪽 </p> 
+        </div>
+    </div>
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/DQHzYyoCHkV/embed" title="Instagram post 7"></iframe>
+      <div class="card-content">  <h3>Presto il tuo cammino brillerà</h3>
+        <p> di una la stella più grande. Forse è per questo che</p>
+<p> è così spinoso adesso..
+E se la pensi così 
+che sei totalmente devastato, 
+quindi forse tu 
+davvero puro? 🪽 </p>
+
+<p>🔖 cartoline da kamenck podilskiy 
+password «dire palanitsa» 🥨
+città fortezza, 
+città miracolosa, 
+storia della città. 
+la città di Palanytsia, l'ospitalità dei gatti locali, le auto davvero vecchie, dove l'antica architettura italiana e il gusto della vita dell'URSS sono simili, collega solo un ponte di cento metri, o meglio tre ponti. 
+orgoglio cittadino del paese, 
+città turistica, 
+città «ottavo miracolo dell'Ucraina»,
+città della difesa, 
+città della grandezza. 
+grazie per un ricordo e per le brave persone.
+</p> </div>
+    </div>
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/C38cDBwII7U/embed" title="Instagram post 4"></iframe>
+        <div class="card-content"> <h3> life kissed ☕️ </h3>  vinci ogni volta che qualcuno lascia la tua vita perché non hai bisogno di qualcuno che non sappia restare?? ️ Credi per il meglio. 
+            <p> Perché la Vita – è una danza sotto la supervisione di un Dio sensibile. Mi pento di aver vissuto a mio discapito nella morsa della disperazione e dell'ansia, </p>
+            <p> ed è necessario che ci sia luce in ogni pensiero. </p> </div>
+    </div>
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/DIUBFKGIrrc/embed" title="Instagram post 5"></iframe>
+        <div class="card-content"> <h3> La vita non è un pacco legato con un fiocco, ma resta comunque un dono 💌 </h3> 
+            Stamattina mi si è rotta la zip! proprio all’inizio - la giornata è partita storta. un uomo in carrozzina, senza gambe, sorrideva grato ai raggi del sole Dio, che tempismo - si è rotto il tacco! ero furiosa 
+            <p> Perché tutto cade dalle mani fin dal primo mattino? Ero arrabbiata, ferma al passaggio pedonale. un SUV . velocità : quasi duecento. un pedone , in un secondo, già in paradiso Mi ha salvata il tacco . sono rimasta lì , immobile. ho trattenuto il respiro per un attimo. e ho pensato In realtà, l’anima umana non ha un prezzo </p> 
+            <p> Eppure c’è così poca anima nel nostro corpo ho ricevuto la lezione, chiara , giusta, elementare. e l’uomo in carrozzina, senza gambe, sorrideva alla luce grato @nonnoandrea_ @villaggiodellezucchecdc </p> </div>
+    </div>
+
+    <div class="post">
+      <iframe src="https://www.instagram.com/p/DPorh45iDeY/embed" title="Instagram post 6"></iframe>
+      <div class="card-content"> damn, I lost interest before I catch the feelings but honestly do you love me or not I don’t know Seems I haven’t melted for you though Tell me the truth , honey a period or a comma here? party after party , I’m flying we got lost without a flock, just trying Your lips I adore, no drama a period or just a comma? 🤹🏻‍♀️🎪🎠🎡🎢 </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
+
+
