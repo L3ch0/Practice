@@ -1,0 +1,310 @@
+/* HEADER */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #fffaf5;
+  border-bottom: 2px solid burlywood;
+}
+
+.logo img {
+  height: 48px;
+}
+
+.menu a {
+  margin-left: 20px;
+  font-weight: bold;
+  color: saddlebrown;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.menu a:hover {
+  color: burlywood;
+  text-decoration: underline;
+}
+h1{color:saddlebrown; 
+    font-family: Arial, Helvetica, sans-serif}
+p{text-align: justify;}
+/* questo è un commento */ 
+.rosso{color:rgb (#222d20)}
+#motto{background-color: antiquewhite}
+a:link{text-decoration: underline;}
+   a:visited{color: red;}
+a:hover{font-size:125%; color:burlywood}
+a:active{font: bold;}
+
+
+.giallo{color:yellow}
+
+
+
+
+
+/* Rainbow list styling scoped to the main section */
+main section ul{list-style:none; padding-left:0; margin:0 0 1rem;}
+main section ul li{position:relative; padding:0.5rem 0.75rem 0.5rem 2.25rem; border-radius:8px; transition:transform 160ms ease, background-color 160ms ease, color 160ms ease;}
+main section ul li::before{content:""; position:absolute; left:0.75rem; top:50%; transform:translateY(-50%); width:1rem; height:1rem; border-radius:50%; background:var(--bullet-color, #888); box-shadow:0 0 0 2px rgba(0,0,0,0.06);}
+main section ul li:hover{background-color:rgba(0,0,0,0.035); transform:translateX(2px); color:var(--bullet-color, inherit);}
+
+/* Assign rainbow colors per item (cycles nicely for up to 7 items) */
+main section ul li:nth-child(7n+1){--bullet-color:#ff3b30;} /* red */
+main section ul li:nth-child(7n+2){--bullet-color:#ff9500;} /* orange */
+main section ul li:nth-child(7n+3){--bullet-color:#ffcc00;} /* yellow */
+main section ul li:nth-child(7n+4){--bullet-color:#34c759;} /* green */
+main section ul li:nth-child(7n+5){--bullet-color:#007aff;} /* blue */
+main section ul li:nth-child(7n+6){--bullet-color:#5856d6;} /* indigo */
+main section ul li:nth-child(7n+7){--bullet-color:#af52de;} /* violet */
+
+/* Stile per tutti i link */
+a {
+    font-weight: bold;
+    color: inherit; /* Usa il colore del testo normale */
+    text-decoration: none; /* Rimuove la sottolineatura predefinita */
+}
+
+/* Opzionale: puoi aggiungere altri stili per i link */
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: darkorange;
+}
+/* Посилання всередині списку хобі */
+main section ul li a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+/* Ефект при наведенні на хобі */
+main section ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* --- Stile per la pagina progetto --- */
+.contenuto {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #fffaf5;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+.contenuto h1 {
+  text-align: center;
+  color: saddlebrown;
+  margin-bottom: 1.5rem;
+}
+
+.contenuto h2 {
+  color: #6b4e2e;
+  margin-top: 1.75rem;
+  border-left: 4px solid burlywood;
+  padding-left: 0.5rem;
+}
+
+.contenuto p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.contenuto ul {
+  margin: 0.5rem 0 1.5rem 1.5rem;
+}
+
+.contenuto li {
+  margin-bottom: 0.5rem;
+}
+
+/* --- Sezione contatti --- */
+.contact-box {
+  background-color: #fffaf5;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  line-height: 1.5;
+}
+
+.contact-box a {
+  color: saddlebrown;
+  font-weight: bold;
+}
+
+.contact-form {
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #6b4e2e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #d4c2a8;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: burlywood;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #cda676;
+}
+.intro {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+.intro h1 {
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  font-style: italic;
+  color: #6c6c6c;
+}
+
+.post-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 40px 80px;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-text {
+  padding: 25px;
+  text-align: center;
+}
+
+.post-text h2 {
+  font-size: 1.1em;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.post-text p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+
+.insta-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #c13584;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.insta-link:hover {
+  color: #8a3ab9;
+}
+
+/* --- FOOTER PERSONALE KRISTINA MATOLA --- */
+.personal-footer {
+  background-color: #fffaf5;
+  border-top: 3px solid burlywood;
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
+  color: saddlebrown;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-left h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  color: saddlebrown;
+}
+
+.footer-quote {
+  font-style: italic;
+  color: #6b4e2e;
+  max-width: 270px;
+  line-height: 1.4;
+}
+
+.footer-right a {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: saddlebrown;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.footer-right a:hover {
+  color: burlywood;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e4d6c8;
+  font-size: 0.85rem;
+  color: #6b4e2e;
+}
+
+
